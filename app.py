@@ -7,8 +7,8 @@ class App:
 
     def __init__(self, icon_path=''):
         try:
-            self._icon_on = Image.open(icon_path + "kon.png")
-            self._icon_off = Image.open(icon_path + "koff.png")
+            self._icon_on = Image.open(icon_path + "icon/kon.png")
+            self._icon_off = Image.open(icon_path + "icon/koff.png")
         except FileNotFoundError:
             print("Files not found in",icon_path)
             npa.notify("Error",
